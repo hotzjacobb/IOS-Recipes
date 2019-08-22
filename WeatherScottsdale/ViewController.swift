@@ -39,27 +39,39 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         dismiss(animated: true, completion: nil)
     }
     
-//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-//
-//        // The info dictionary may contain multiple representations of the image. You want to use the original.
-//        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else {
-//            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
-//        }
-//
-//        // Set photoImageView to display the selected image.
-//        photoImageView.image = selectedImage
-//
-//        // Dismiss the picker.
-//        dismiss(animated: true, completion: nil)
-//    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+
+        // The info dictionary may contain multiple representations of the image. You want to use the original.
+        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        }
+
+        // Set photoImageView to display the selected image.
+        photoImageView.image = selectedImage
+
+        // Dismiss the picker.
+        dismiss(animated: true, completion: nil)
+    }
     
 
     //MARK: Actions
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
         mealNameLabel.text = "Default Text"
+        print("Print works")
     }
     
-    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+//    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+//        print("Not getting here")
+//        //nameText.resignFirstResponder()
+//        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+//       // let imagePickerController = UIImagePickerController()
+//        //imagePickerController.sourceType ng here= .photoLibrary
+//        // Make sure ViewController is notified when the user picks an image.
+//        //imagePickerController.delegate = self
+//        //present(imagePickerController, animated: true, completion: nil)
+//    }
+    
+    @IBAction func selectPhoto(_ sender: UITapGestureRecognizer) {
         nameText.resignFirstResponder()
         // UIImagePickerController is a view controller that lets a user pick media from their photo library.
         let imagePickerController = UIImagePickerController()
@@ -68,6 +80,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)
     }
+    
     
 }
 
