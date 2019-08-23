@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  WeatherScottsdale
 //
-//  Created by Jeffrey Hotz on 2019-08-19.
+//  Created by Jacob Hotz on 2019-08-19.
 //  Copyright © 2019 Jacob Hotz. All rights reserved.
 //
 
@@ -39,20 +39,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         dismiss(animated: true, completion: nil)
     }
     
-//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-//
-//        // The info dictionary may contain multiple representations of the image. You want to use the original.
-//        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else {
-//            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
-//        }
-//
-//        // Set photoImageView to display the selected image.
-//        photoImageView.image = selectedImage
-//
-//        // Dismiss the picker.
-//        dismiss(animated: true, completion: nil)
-//    }
-//
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.originalImage] as? UIImage else {
