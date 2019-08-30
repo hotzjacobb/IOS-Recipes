@@ -15,6 +15,8 @@
 		7F3EC919230B3AE400E81FC1 /* WeatherScottsdaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3EC918230B3AE400E81FC1 /* WeatherScottsdaleTests.swift */; };
 		7F3EC924230B3AE400E81FC1 /* WeatherScottsdaleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3EC923230B3AE400E81FC1 /* WeatherScottsdaleUITests.swift */; };
 		7F94951A230F186A00C11FE4 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F949519230F186A00C11FE4 /* RatingControl.swift */; };
+		7F94951C2318088B00C11FE4 /*  Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94951B2318088B00C11FE4 /*  Meal.swift */; };
+		7F94951E2319C89800C11FE4 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94951D2319C89800C11FE4 /* MealTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7F3EC923230B3AE400E81FC1 /* WeatherScottsdaleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherScottsdaleUITests.swift; sourceTree = "<group>"; };
 		7F3EC925230B3AE400E81FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F949519230F186A00C11FE4 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		7F94951B2318088B00C11FE4 /*  Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Meal.swift"; sourceTree = "<group>"; };
+		7F94951D2319C89800C11FE4 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealTableViewCell.swift; path = ../MealTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 		7F3EC902230B3AE200E81FC1 /* WeatherScottsdale */ = {
 			isa = PBXGroup;
 			children = (
+				7F94951D2319C89800C11FE4 /* MealTableViewCell.swift */,
 				7F3EC903230B3AE200E81FC1 /* AppDelegate.swift */,
 				7F3EC905230B3AE200E81FC1 /* ViewController.swift */,
 				7F949519230F186A00C11FE4 /* RatingControl.swift */,
 				7F3EC907230B3AE200E81FC1 /* Main.storyboard */,
+				7F94951B2318088B00C11FE4 /*  Meal.swift */,
 				7F3EC90A230B3AE400E81FC1 /* Assets.xcassets */,
 				7F3EC90C230B3AE400E81FC1 /* LaunchScreen.storyboard */,
 				7F3EC90F230B3AE400E81FC1 /* Info.plist */,
@@ -260,8 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F3EC906230B3AE200E81FC1 /* ViewController.swift in Sources */,
+				7F94951C2318088B00C11FE4 /*  Meal.swift in Sources */,
 				7F94951A230F186A00C11FE4 /* RatingControl.swift in Sources */,
 				7F3EC904230B3AE200E81FC1 /* AppDelegate.swift in Sources */,
+				7F94951E2319C89800C11FE4 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
