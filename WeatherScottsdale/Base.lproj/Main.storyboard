@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Meal Table View Controller-->
         <scene sceneID="BMB-8b-yUh">
             <objects>
-                <tableViewController id="UrS-fn-7NT" sceneMemberID="viewController">
+                <tableViewController id="UrS-fn-7NT" customClass="MealTableViewController" customModule="WeatherScottsdale" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fKD-RQ-OI6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,6 +43,11 @@
                                         </stackView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="mealLabel" destination="6T9-PA-5aW" id="JuB-WO-aC9"/>
+                                    <outlet property="mealPhoto" destination="hsU-LR-3lJ" id="3iX-0W-pRp"/>
+                                    <outlet property="mealStars" destination="Ogb-37-WTV" id="ZT4-i5-Ekb"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
