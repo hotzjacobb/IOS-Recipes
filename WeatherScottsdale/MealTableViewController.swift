@@ -102,15 +102,15 @@ class MealTableViewController: UITableViewController {
         let photo3 = UIImage(named: "meal3")
     
     
-    guard let meal1 = Meal(name: "meal1", photo: photo1, rating: 4) else {
+    guard let meal1 = Meal(name: "Sesame Noodles", photo: photo1, rating: 4) else {
         fatalError("unable to instantiate meal1")
     }
     
-    guard let meal2 = Meal(name: "meal2", photo: photo2, rating: 5) else {
+    guard let meal2 = Meal(name: "Green Shrimp", photo: photo2, rating: 5) else {
     fatalError("unable to instantiate meal2")
     }
     
-    guard let meal3 = Meal(name: "meal3", photo: photo3, rating: 3) else {
+    guard let meal3 = Meal(name: "Souper Soup", photo: photo3, rating: 3) else {
     fatalError("unable to instantiate meal3")
     }
     
